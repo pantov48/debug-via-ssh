@@ -39,3 +39,6 @@ See https://ngrok.com/docs for latest information.
 * sa - South America
 * jp - Japan
 * in - India
+
+
+#        default: 'windows-2016 | windows-2019 | ubuntu-16.04 | ubuntu-18.04 | ubuntu-20.04 | macos-10.15 | macos-11.0'

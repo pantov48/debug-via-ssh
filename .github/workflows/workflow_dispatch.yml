@@ -7,7 +7,7 @@ on:
       os:
         description: 'Leave only desired OS in the field'
         required: true
-        default: 'ubuntu-20.04'
+        default: 'windows-2019'
 
 
 jobs:
@@ -16,6 +16,7 @@ jobs:
     name: Start the SSH session
     steps:
     - name: Start SSH session
+      timeout-minutes: 260
       uses: luchihoratiu/debug-via-ssh@main
       with:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}

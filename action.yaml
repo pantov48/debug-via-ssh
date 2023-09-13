@@ -19,6 +19,9 @@ inputs:
     default: 21500
 runs:
   using: "composite"
+  defaults:
+      run:
+        timeout-minutes: 5
   steps:
     - name: Check inputs
       run: |

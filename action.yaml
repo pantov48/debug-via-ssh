@@ -82,7 +82,7 @@ runs:
           printf " [DONE]\n\n"
 
           echo "# Add Firewall rule to allow inbound TCP connection on local port 22"
-            New-NetFirewallRule -Name ngrok -DisplayName 'ngrok' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+            New-NetFirewallRule -Name ngrok -DisplayName 'ngrok' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 3389
 
           echo "# Start the SSH server"
             net start BvSshServer

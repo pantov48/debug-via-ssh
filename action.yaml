@@ -79,7 +79,7 @@ runs:
       run: |
         echo "# Install ngrok3"
           curl https://bin.equinox.io/c/4VmDzA7iaHb/$(cat ngrok_zip_name) --output ngrok_old.zip 
-          curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-v3-stable-windows-amd64.zip --output ngrok.zip
+          curl https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip --output ngrok.zip
           ls 
           unzip ngrok.zip
           chmod +x ./ngrok

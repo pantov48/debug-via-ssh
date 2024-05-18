@@ -62,6 +62,7 @@ runs:
         elseif('${{ runner.os }}' -eq 'Windows')
         {
           printf "# Preparing environment..."
+           printf "# get ngrok-v3-stable-windows-amd64.zip"
             echo "ngrok-v3-stable-windows-amd64.zip" > ngrok_zip_name
             echo $env:UserName > ssh_user
           printf " [DONE]\n\n"
